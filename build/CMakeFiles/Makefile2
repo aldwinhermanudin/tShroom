@@ -321,6 +321,7 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 
 # Convenience name for "all" pass in the directory.
 tshroom/all: tshroom/CMakeFiles/image_processing.dir/all
+tshroom/all: tshroom/CMakeFiles/main_tshroom.dir/all
 tshroom/all: tshroom/CMakeFiles/video_feed.dir/all
 tshroom/all: tshroom/CMakeFiles/video_monitor.dir/all
 .PHONY : tshroom/all
@@ -330,6 +331,7 @@ tshroom/clean: tshroom/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 tshroom/clean: tshroom/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 tshroom/clean: tshroom/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 tshroom/clean: tshroom/CMakeFiles/image_processing.dir/clean
+tshroom/clean: tshroom/CMakeFiles/main_tshroom.dir/clean
 tshroom/clean: tshroom/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 tshroom/clean: tshroom/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 tshroom/clean: tshroom/CMakeFiles/roscpp_generate_messages_py.dir/clean
@@ -476,6 +478,41 @@ tshroom/CMakeFiles/image_processing.dir/clean:
 
 # clean rule for target.
 clean: tshroom/CMakeFiles/image_processing.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tshroom/CMakeFiles/main_tshroom.dir
+
+# All Build rule for target.
+tshroom/CMakeFiles/main_tshroom.dir/all:
+	$(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/depend
+	$(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  12
+	@echo "Built target main_tshroom"
+.PHONY : tshroom/CMakeFiles/main_tshroom.dir/all
+
+# Include target in all.
+all: tshroom/CMakeFiles/main_tshroom.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tshroom/CMakeFiles/main_tshroom.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 tshroom/CMakeFiles/main_tshroom.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles 0
+.PHONY : tshroom/CMakeFiles/main_tshroom.dir/rule
+
+# Convenience name for target.
+main_tshroom: tshroom/CMakeFiles/main_tshroom.dir/rule
+.PHONY : main_tshroom
+
+# clean rule for target.
+tshroom/CMakeFiles/main_tshroom.dir/clean:
+	$(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/clean
+.PHONY : tshroom/CMakeFiles/main_tshroom.dir/clean
+
+# clean rule for target.
+clean: tshroom/CMakeFiles/main_tshroom.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -857,7 +894,7 @@ clean: tshroom/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 tshroom/CMakeFiles/video_feed.dir/all:
 	$(MAKE) -f tshroom/CMakeFiles/video_feed.dir/build.make tshroom/CMakeFiles/video_feed.dir/depend
 	$(MAKE) -f tshroom/CMakeFiles/video_feed.dir/build.make tshroom/CMakeFiles/video_feed.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  12
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  13
 	@echo "Built target video_feed"
 .PHONY : tshroom/CMakeFiles/video_feed.dir/all
 
@@ -892,7 +929,7 @@ clean: tshroom/CMakeFiles/video_feed.dir/clean
 tshroom/CMakeFiles/video_monitor.dir/all:
 	$(MAKE) -f tshroom/CMakeFiles/video_monitor.dir/build.make tshroom/CMakeFiles/video_monitor.dir/depend
 	$(MAKE) -f tshroom/CMakeFiles/video_monitor.dir/build.make tshroom/CMakeFiles/video_monitor.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  13
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  14
 	@echo "Built target video_monitor"
 .PHONY : tshroom/CMakeFiles/video_monitor.dir/all
 

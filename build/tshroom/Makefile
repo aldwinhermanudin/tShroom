@@ -206,6 +206,20 @@ image_processing/fast:
 .PHONY : image_processing/fast
 
 # Convenience name for target.
+tshroom/CMakeFiles/main_tshroom.dir/rule:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f CMakeFiles/Makefile2 tshroom/CMakeFiles/main_tshroom.dir/rule
+.PHONY : tshroom/CMakeFiles/main_tshroom.dir/rule
+
+# Convenience name for target.
+main_tshroom: tshroom/CMakeFiles/main_tshroom.dir/rule
+.PHONY : main_tshroom
+
+# fast build rule for target.
+main_tshroom/fast:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/build
+.PHONY : main_tshroom/fast
+
+# Convenience name for target.
 tshroom/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f CMakeFiles/Makefile2 tshroom/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : tshroom/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -617,6 +631,30 @@ src/image_processing.cpp.s:
 	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/image_processing.dir/build.make tshroom/CMakeFiles/image_processing.dir/src/image_processing.cpp.s
 .PHONY : src/image_processing.cpp.s
 
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 src/video_feed.o: src/video_feed.cpp.o
 .PHONY : src/video_feed.o
 
@@ -680,6 +718,7 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... main_tshroom"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
@@ -723,6 +762,9 @@ help:
 	@echo "... src/image_processing.o"
 	@echo "... src/image_processing.i"
 	@echo "... src/image_processing.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/video_feed.o"
 	@echo "... src/video_feed.i"
 	@echo "... src/video_feed.s"

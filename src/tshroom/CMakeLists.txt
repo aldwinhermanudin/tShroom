@@ -161,6 +161,11 @@ target_link_libraries(video_monitor
 	${OpenCV_LIBRARIES}
 )
 
+add_executable(main_tshroom src/main.cpp)
+target_link_libraries(main_tshroom
+	${catkin_LIBRARIES}
+)
+
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(tshroom_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})

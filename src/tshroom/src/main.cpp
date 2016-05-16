@@ -4,14 +4,22 @@
 #include "std_msgs/MultiArrayLayout.h"
 #include "std_msgs/MultiArrayDimension.h"
 #include "std_msgs/Int32MultiArray.h"
+#include "std_msgs/Float64MultiArray.h"
 #include "std_msgs/Int32.h"
+#include "std_msgs/Float64.h"
 
 #define STEERING 0
 #define THROTTLE 2
 
-void sensorsCB(const std_msgs::Int32MultiArray& msg);
-void blobSizeCB(const std_msgs::Int32& msg);
+void sensorsCB(const std_msgs::Float64MultiArray& msg);
+void blobSizeCB(const std_msgs::Float64& msg);
 void activePointCB(const std_msgs::Int32& msg);
+
+double blob_size	= 0 ;
+int active_point	= 0 ;
+double humidity		= 0 ;
+double temperature	= 0 ;
+double pressure		= 0 ;
 
 int main(int argc, char **argv)
 {
@@ -26,4 +34,18 @@ int main(int argc, char **argv)
   return 0;
 }
 
-
+void sensorsCB(const std_msgs::Float64MultiArray& msg){
+	
+	humidity		= msg.data[0] ;
+	temperature		= msg.data[1] ;
+	pressure		= msg.data[2] ;
+	
+}
+void blobSizeCB(const std_msgs::Float64& msg){
+	
+	blob_size = msg.data;
+}
+void activePointCB(const std_msgs::Int32& msg){
+	
+	active_point = msg.data;
+}

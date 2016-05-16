@@ -8,6 +8,7 @@
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/gtest/CMakeFiles/gtest.dir
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/gtest/CMakeFiles/gtest_main.dir
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom/CMakeFiles/image_processing.dir
+/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom/CMakeFiles/main_tshroom.dir
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom/CMakeFiles/roscpp_generate_messages_lisp.dir
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom/CMakeFiles/roscpp_generate_messages_py.dir

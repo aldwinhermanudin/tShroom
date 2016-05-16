@@ -306,6 +306,19 @@ image_processing/fast:
 .PHONY : image_processing/fast
 
 #=============================================================================
+# Target rules for targets named main_tshroom
+
+# Build rule for target.
+main_tshroom: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_tshroom
+.PHONY : main_tshroom
+
+# fast build rule for target.
+main_tshroom/fast:
+	$(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/build
+.PHONY : main_tshroom/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -512,6 +525,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... image_processing"
+	@echo "... main_tshroom"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
