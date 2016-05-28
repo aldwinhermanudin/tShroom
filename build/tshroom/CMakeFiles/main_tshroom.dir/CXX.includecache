@@ -6,12 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main.cpp
+/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main_tshroom.cpp
 ros/ros.h
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/ros/ros.h
-std_msgs/Bool.h
-/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/std_msgs/Bool.h
-iostream
+string
 -
 std_msgs/MultiArrayLayout.h
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/std_msgs/MultiArrayLayout.h
@@ -25,6 +23,8 @@ std_msgs/Int32.h
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/std_msgs/Int32.h
 std_msgs/Float64.h
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/std_msgs/Float64.h
+std_msgs/String.h
+/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/std_msgs/String.h
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h
@@ -668,22 +668,6 @@ ros/forwards.h
 
 /opt/ros/indigo/include/rosconsole/macros_generated.h
 
-/opt/ros/indigo/include/std_msgs/Bool.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
 /opt/ros/indigo/include/std_msgs/Float64.h
 string
 -
@@ -784,5 +768,21 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 std_msgs/MultiArrayDimension.h
+-
+
+/opt/ros/indigo/include/std_msgs/String.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 

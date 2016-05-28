@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main.cpp" "/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o"
+  "/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main_tshroom.cpp" "/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

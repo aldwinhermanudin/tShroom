@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/main_tshroom.dir/src/main.cpp.o"
+  "CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o"
   "/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/devel/lib/tshroom/main_tshroom.pdb"
   "/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/devel/lib/tshroom/main_tshroom"
 )

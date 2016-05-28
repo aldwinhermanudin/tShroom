@@ -1,19 +1,25 @@
 <launch>
-	
+
 	<node name="video_feed" pkg="tshroom" type="video_feed" output="screen">
 		<param name="camera_port" value="0" />
 		<param name="camera_width" value="640" />
 		<param name="camera_height" value="480" />
-		
+
 		<param name="v4l2_configuration" value="0" />
 	</node>
-	
-	<node name="image_processing" pkg="tshroom" type="image_processing" output="screen">
+
+	<node name="image_processing" pkg="tshroom" type="image_processing">
 		<!-- <param name="input_path" value="/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/initial_development/tShroom_480p.mp4" /> -->
 		<param name="input_path" value="" />
 		<param name="display_video" value="1" />
 	</node>
-	
-	<node name="main_tshroom" pkg="tshroom" type="main_tshroom" />
-	
+
+	<node name="telegram_api" pkg="tshroom" type="telegram_api.py" output="screen"/>
+
+	<node name="main_tshroom" pkg="tshroom" type="main_tshroom" output="screen">
+		<param name="finished_blob_ratio" value="3" />
+		<param name="humidity_thres" value="60" />
+		<param name="temperature_thres" value="10" />
+	</node>
+
 </launch>

@@ -261,7 +261,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  2
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -292,7 +292,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  3
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -320,6 +320,7 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 # Directory level rules for directory tshroom
 
 # Convenience name for "all" pass in the directory.
+tshroom/all: tshroom/CMakeFiles/ArrayPublish.dir/all
 tshroom/all: tshroom/CMakeFiles/image_processing.dir/all
 tshroom/all: tshroom/CMakeFiles/main_tshroom.dir/all
 tshroom/all: tshroom/CMakeFiles/video_feed.dir/all
@@ -327,6 +328,7 @@ tshroom/all: tshroom/CMakeFiles/video_monitor.dir/all
 .PHONY : tshroom/all
 
 # Convenience name for "clean" pass in the directory.
+tshroom/clean: tshroom/CMakeFiles/ArrayPublish.dir/clean
 tshroom/clean: tshroom/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 tshroom/clean: tshroom/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 tshroom/clean: tshroom/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
@@ -351,6 +353,41 @@ tshroom/clean: tshroom/CMakeFiles/video_monitor.dir/clean
 # Convenience name for "preinstall" pass in the directory.
 tshroom/preinstall:
 .PHONY : tshroom/preinstall
+
+#=============================================================================
+# Target rules for target tshroom/CMakeFiles/ArrayPublish.dir
+
+# All Build rule for target.
+tshroom/CMakeFiles/ArrayPublish.dir/all:
+	$(MAKE) -f tshroom/CMakeFiles/ArrayPublish.dir/build.make tshroom/CMakeFiles/ArrayPublish.dir/depend
+	$(MAKE) -f tshroom/CMakeFiles/ArrayPublish.dir/build.make tshroom/CMakeFiles/ArrayPublish.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  1
+	@echo "Built target ArrayPublish"
+.PHONY : tshroom/CMakeFiles/ArrayPublish.dir/all
+
+# Include target in all.
+all: tshroom/CMakeFiles/ArrayPublish.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tshroom/CMakeFiles/ArrayPublish.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 tshroom/CMakeFiles/ArrayPublish.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles 0
+.PHONY : tshroom/CMakeFiles/ArrayPublish.dir/rule
+
+# Convenience name for target.
+ArrayPublish: tshroom/CMakeFiles/ArrayPublish.dir/rule
+.PHONY : ArrayPublish
+
+# clean rule for target.
+tshroom/CMakeFiles/ArrayPublish.dir/clean:
+	$(MAKE) -f tshroom/CMakeFiles/ArrayPublish.dir/build.make tshroom/CMakeFiles/ArrayPublish.dir/clean
+.PHONY : tshroom/CMakeFiles/ArrayPublish.dir/clean
+
+# clean rule for target.
+clean: tshroom/CMakeFiles/ArrayPublish.dir/clean
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target tshroom/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
@@ -452,7 +489,7 @@ clean: tshroom/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 tshroom/CMakeFiles/image_processing.dir/all:
 	$(MAKE) -f tshroom/CMakeFiles/image_processing.dir/build.make tshroom/CMakeFiles/image_processing.dir/depend
 	$(MAKE) -f tshroom/CMakeFiles/image_processing.dir/build.make tshroom/CMakeFiles/image_processing.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  3 4 5 6 7 8 9 10 11
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  4 5 6 7 8 9 10 11 12
 	@echo "Built target image_processing"
 .PHONY : tshroom/CMakeFiles/image_processing.dir/all
 
@@ -487,7 +524,7 @@ clean: tshroom/CMakeFiles/image_processing.dir/clean
 tshroom/CMakeFiles/main_tshroom.dir/all:
 	$(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/depend
 	$(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  12
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  13
 	@echo "Built target main_tshroom"
 .PHONY : tshroom/CMakeFiles/main_tshroom.dir/all
 
@@ -894,7 +931,7 @@ clean: tshroom/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 tshroom/CMakeFiles/video_feed.dir/all:
 	$(MAKE) -f tshroom/CMakeFiles/video_feed.dir/build.make tshroom/CMakeFiles/video_feed.dir/depend
 	$(MAKE) -f tshroom/CMakeFiles/video_feed.dir/build.make tshroom/CMakeFiles/video_feed.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  13
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  14
 	@echo "Built target video_feed"
 .PHONY : tshroom/CMakeFiles/video_feed.dir/all
 
@@ -929,7 +966,7 @@ clean: tshroom/CMakeFiles/video_feed.dir/clean
 tshroom/CMakeFiles/video_monitor.dir/all:
 	$(MAKE) -f tshroom/CMakeFiles/video_monitor.dir/build.make tshroom/CMakeFiles/video_monitor.dir/depend
 	$(MAKE) -f tshroom/CMakeFiles/video_monitor.dir/build.make tshroom/CMakeFiles/video_monitor.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  14
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles  15
 	@echo "Built target video_monitor"
 .PHONY : tshroom/CMakeFiles/video_monitor.dir/all
 

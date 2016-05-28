@@ -49,37 +49,37 @@ include tshroom/CMakeFiles/main_tshroom.dir/progress.make
 # Include the compile flags for this target's objects.
 include tshroom/CMakeFiles/main_tshroom.dir/flags.make
 
-tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o: tshroom/CMakeFiles/main_tshroom.dir/flags.make
-tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o: /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main.cpp
+tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o: tshroom/CMakeFiles/main_tshroom.dir/flags.make
+tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o: /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main_tshroom.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o"
-	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main_tshroom.dir/src/main.cpp.o -c /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o"
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o -c /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main_tshroom.cpp
 
-tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_tshroom.dir/src/main.cpp.i"
-	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main.cpp > CMakeFiles/main_tshroom.dir/src/main.cpp.i
+tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.i"
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main_tshroom.cpp > CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.i
 
-tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_tshroom.dir/src/main.cpp.s"
-	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main.cpp -o CMakeFiles/main_tshroom.dir/src/main.cpp.s
+tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.s"
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build/tshroom && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/src/tshroom/src/main_tshroom.cpp -o CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.s
 
-tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o.requires:
-.PHONY : tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o.requires
+tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o.requires:
+.PHONY : tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o.requires
 
-tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o.provides: tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o.requires
-	$(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o.provides.build
-.PHONY : tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o.provides
+tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o.provides: tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o.requires
+	$(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o.provides.build
+.PHONY : tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o.provides
 
-tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o.provides.build: tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o
+tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o.provides.build: tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o
 
 # Object files for target main_tshroom
 main_tshroom_OBJECTS = \
-"CMakeFiles/main_tshroom.dir/src/main.cpp.o"
+"CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o"
 
 # External object files for target main_tshroom
 main_tshroom_EXTERNAL_OBJECTS =
 
-/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/devel/lib/tshroom/main_tshroom: tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o
+/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/devel/lib/tshroom/main_tshroom: tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/devel/lib/tshroom/main_tshroom: tshroom/CMakeFiles/main_tshroom.dir/build.make
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/devel/lib/tshroom/main_tshroom: /opt/ros/indigo/lib/libcv_bridge.so
 /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/devel/lib/tshroom/main_tshroom: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
@@ -131,7 +131,7 @@ main_tshroom_EXTERNAL_OBJECTS =
 tshroom/CMakeFiles/main_tshroom.dir/build: /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/devel/lib/tshroom/main_tshroom
 .PHONY : tshroom/CMakeFiles/main_tshroom.dir/build
 
-tshroom/CMakeFiles/main_tshroom.dir/requires: tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o.requires
+tshroom/CMakeFiles/main_tshroom.dir/requires: tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o.requires
 .PHONY : tshroom/CMakeFiles/main_tshroom.dir/requires
 
 tshroom/CMakeFiles/main_tshroom.dir/clean:

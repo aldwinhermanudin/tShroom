@@ -141,8 +141,8 @@ add_definitions ("-Wall")
 add_executable (image_processing src/cmt/common.cpp src/cmt/gui.cpp src/image_processing.cpp
     src/cmt/CMT.cpp src/cmt/Consensus.cpp src/cmt/Fusion.cpp src/cmt/Matcher.cpp src/cmt/Tracker.cpp
     src/cmt/fastcluster/fastcluster.cpp)
-        
-target_link_libraries(image_processing 
+
+target_link_libraries(image_processing
 	${OpenCV_LIBS}
 	${catkin_LIBRARIES}
 )
@@ -155,17 +155,24 @@ target_link_libraries(video_feed
 	-lv4l2
 )
 
+
+add_executable(main_tshroom src/main_tshroom.cpp)
+target_link_libraries(main_tshroom
+	${catkin_LIBRARIES}
+)
+
+
 add_executable(video_monitor src/video_monitor.cpp)
 target_link_libraries(video_monitor
 	${catkin_LIBRARIES}
 	${OpenCV_LIBRARIES}
 )
 
-add_executable(main_tshroom src/main.cpp)
-target_link_libraries(main_tshroom
+add_executable(ArrayPublish src/testing/ArrayPublish.cpp)
+target_link_libraries(ArrayPublish
 	${catkin_LIBRARIES}
+	${OpenCV_LIBRARIES}
 )
-
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(tshroom_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})

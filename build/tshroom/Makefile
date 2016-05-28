@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+tshroom/CMakeFiles/ArrayPublish.dir/rule:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f CMakeFiles/Makefile2 tshroom/CMakeFiles/ArrayPublish.dir/rule
+.PHONY : tshroom/CMakeFiles/ArrayPublish.dir/rule
+
+# Convenience name for target.
+ArrayPublish: tshroom/CMakeFiles/ArrayPublish.dir/rule
+.PHONY : ArrayPublish
+
+# fast build rule for target.
+ArrayPublish/fast:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/ArrayPublish.dir/build.make tshroom/CMakeFiles/ArrayPublish.dir/build
+.PHONY : ArrayPublish/fast
+
+# Convenience name for target.
 tshroom/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f CMakeFiles/Makefile2 tshroom/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : tshroom/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -631,29 +645,53 @@ src/image_processing.cpp.s:
 	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/image_processing.dir/build.make tshroom/CMakeFiles/image_processing.dir/src/image_processing.cpp.s
 .PHONY : src/image_processing.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/main_tshroom.o: src/main_tshroom.cpp.o
+.PHONY : src/main_tshroom.o
 
 # target to build an object file
-src/main.cpp.o:
-	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/main_tshroom.cpp.o:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.o
+.PHONY : src/main_tshroom.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/main_tshroom.i: src/main_tshroom.cpp.i
+.PHONY : src/main_tshroom.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/main_tshroom.cpp.i:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.i
+.PHONY : src/main_tshroom.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/main_tshroom.s: src/main_tshroom.cpp.s
+.PHONY : src/main_tshroom.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/main_tshroom.cpp.s:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/main_tshroom.dir/build.make tshroom/CMakeFiles/main_tshroom.dir/src/main_tshroom.cpp.s
+.PHONY : src/main_tshroom.cpp.s
+
+src/testing/ArrayPublish.o: src/testing/ArrayPublish.cpp.o
+.PHONY : src/testing/ArrayPublish.o
+
+# target to build an object file
+src/testing/ArrayPublish.cpp.o:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/ArrayPublish.dir/build.make tshroom/CMakeFiles/ArrayPublish.dir/src/testing/ArrayPublish.cpp.o
+.PHONY : src/testing/ArrayPublish.cpp.o
+
+src/testing/ArrayPublish.i: src/testing/ArrayPublish.cpp.i
+.PHONY : src/testing/ArrayPublish.i
+
+# target to preprocess a source file
+src/testing/ArrayPublish.cpp.i:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/ArrayPublish.dir/build.make tshroom/CMakeFiles/ArrayPublish.dir/src/testing/ArrayPublish.cpp.i
+.PHONY : src/testing/ArrayPublish.cpp.i
+
+src/testing/ArrayPublish.s: src/testing/ArrayPublish.cpp.s
+.PHONY : src/testing/ArrayPublish.s
+
+# target to generate assembly for a file
+src/testing/ArrayPublish.cpp.s:
+	cd /home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/build && $(MAKE) -f tshroom/CMakeFiles/ArrayPublish.dir/build.make tshroom/CMakeFiles/ArrayPublish.dir/src/testing/ArrayPublish.cpp.s
+.PHONY : src/testing/ArrayPublish.cpp.s
 
 src/video_feed.o: src/video_feed.cpp.o
 .PHONY : src/video_feed.o
@@ -709,6 +747,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... ArrayPublish"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
@@ -762,9 +801,12 @@ help:
 	@echo "... src/image_processing.o"
 	@echo "... src/image_processing.i"
 	@echo "... src/image_processing.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/main_tshroom.o"
+	@echo "... src/main_tshroom.i"
+	@echo "... src/main_tshroom.s"
+	@echo "... src/testing/ArrayPublish.o"
+	@echo "... src/testing/ArrayPublish.i"
+	@echo "... src/testing/ArrayPublish.s"
 	@echo "... src/video_feed.o"
 	@echo "... src/video_feed.i"
 	@echo "... src/video_feed.s"

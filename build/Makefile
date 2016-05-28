@@ -254,6 +254,19 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
+# Target rules for targets named ArrayPublish
+
+# Build rule for target.
+ArrayPublish: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ArrayPublish
+.PHONY : ArrayPublish
+
+# fast build rule for target.
+ArrayPublish/fast:
+	$(MAKE) -f tshroom/CMakeFiles/ArrayPublish.dir/build.make tshroom/CMakeFiles/ArrayPublish.dir/build
+.PHONY : ArrayPublish/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -521,6 +534,7 @@ help:
 	@echo "... tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... ArrayPublish"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
