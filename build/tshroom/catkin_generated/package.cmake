@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "tshroom")
-set(tshroom_MAINTAINER "aldwinakbar <aldwinakbar@todo.todo>")
-set(tshroom_DEPRECATED "")
-set(tshroom_VERSION "0.0.0")
-set(tshroom_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
-set(tshroom_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
-set(tshroom_BUILDTOOL_DEPENDS "catkin")

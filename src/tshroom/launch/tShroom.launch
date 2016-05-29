@@ -15,10 +15,11 @@
 	</node>
 
 	<node name="telegram_api" pkg="tshroom" type="telegram_api.py" output="screen"/>
+	<node name="arduino_control" pkg="rosserial_python" type="serial_node.py" args="/dev/ttyACM1" output="screen"/>
 
 	<node name="main_tshroom" pkg="tshroom" type="main_tshroom" output="screen">
 		<param name="finished_blob_ratio" value="3" />
-		<param name="humidity_thres" value="60" />
+		<param name="humidity_thres" value="80" />
 		<param name="temperature_thres" value="10" />
 	</node>
 

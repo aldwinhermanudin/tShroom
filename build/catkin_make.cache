@@ -1,2 +1,0 @@
-tshroom
--DCATKIN_DEVEL_PREFIX=/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/devel -DCMAKE_INSTALL_PREFIX=/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/install -G Unix Makefiles

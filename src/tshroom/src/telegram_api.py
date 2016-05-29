@@ -38,7 +38,7 @@ def handle(msg):
         bot.sendMessage(chat_id, str(datetime.datetime.now()))
     elif command == '/status':
         global tshroom_sensors
-        telegram_status_message = "tShroom Sensor Data \n\nHumidity    : %f \nTemperature : %f \nPressure    : %f" % (tshroom_sensors[0],tshroom_sensors[1],tshroom_sensors[2])
+        telegram_status_message = "tShroom Sensor Data \n\nHumidity    : %.2f percent\nTemperature : %.2f celcius \nPressure    : %.2f pascal" % (tshroom_sensors[0],tshroom_sensors[1],tshroom_sensors[2])
         bot.sendMessage(chat_id, telegram_status_message)
 
 

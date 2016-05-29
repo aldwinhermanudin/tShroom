@@ -42,14 +42,14 @@ int main(int argc, char **argv)
     ros::spinOnce();
   }
 
-  // Set default value for pump state
-  pump_state.data = 0;
-  pub_pump_control.publish(pump_state);
-
   double initial_blob = blob_size;
   std_msgs::String telegram_message;
   bool pump_flag = true;
   std_msgs::Int32 pump_state;
+
+  // Set default value for pump state
+  pump_state.data = 0;
+  pub_pump_control.publish(pump_state);
 
   telegram_message.data = "Starting mushroom program with blob size of  ";
   std::ostringstream strs;
@@ -70,6 +70,8 @@ int main(int argc, char **argv)
       std::string str = strs.str();
       telegram_message.data += str;
       pub_communication_telegram.publish(telegram_message);
+      pump_state.data = 0;
+      pub_pump_control.publish(pump_state);
       sleep(10);
       break;
     }
@@ -86,6 +88,7 @@ int main(int argc, char **argv)
       pump_flag = true;
     }
   }
+
   return 0;
 }
 

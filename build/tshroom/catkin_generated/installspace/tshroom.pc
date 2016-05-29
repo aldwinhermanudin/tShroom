@@ -1,8 +1,0 @@
-prefix=/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/install
-
-Name: tshroom
-Description: Description of tshroom
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/aldwinakbar/Dropbox/Projects/campus/team/tShroom/install/lib 
-Requires: 
